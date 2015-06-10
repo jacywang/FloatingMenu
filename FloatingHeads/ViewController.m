@@ -11,6 +11,7 @@
 #import "FloatingMenuController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet FloatingButton *plusButton;
 
 @end
 
@@ -27,7 +28,7 @@
 }
 
 - (IBAction)plusButtonPressed:(FloatingButton *)sender {
-    FloatingMenuController *floatingMenuController = [[FloatingMenuController alloc] initWithView:self.view];
+    FloatingMenuController *floatingMenuController = [[FloatingMenuController alloc] initWithView:self.plusButton];
     
     [self presentViewController:floatingMenuController animated:YES completion:nil];
 }

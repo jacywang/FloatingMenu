@@ -21,9 +21,9 @@
     self = [super initWithNibName:nil bundle:nil];
     
     self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-    self.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
-//    self.fromView = view;
+    self.fromView = view;
     
     return self;
 }
@@ -38,6 +38,16 @@
     self.closeButton = [[FloatingButton alloc] initWithFrame:CGRectMake(0, 0, 80.0, 80.0) andImage:[UIImage imageNamed:@"icon-close"] andBackgroundColor:[UIColor flatRedColor]];
     [self.view addSubview:self.closeButton];
     [self.closeButton addTarget:self action:@selector(dismissController) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self configureButtons];
+}
+
+-(void)configureButtons {
+    self.closeButton.center = self.fromView.center;
 }
 
 -(void)dismissController {

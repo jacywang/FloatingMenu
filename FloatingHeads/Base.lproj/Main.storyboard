@@ -43,6 +43,9 @@
                             <constraint firstItem="cU2-E5-hCD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xjx-Wa-aca"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="plusButton" destination="6vM-9q-2mx" id="HNE-QC-RFF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
