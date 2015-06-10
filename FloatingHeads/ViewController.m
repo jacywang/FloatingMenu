@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "FloatingButton.h"
+#import "FloatingMenuController.h"
 
 @interface ViewController ()
 
@@ -24,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)plusButtonPressed:(FloatingButton *)sender {
+    FloatingMenuController *floatingMenuController = [[FloatingMenuController alloc] initWithView:self.view];
+    
+    [self presentViewController:floatingMenuController animated:YES completion:nil];
+}
 @end

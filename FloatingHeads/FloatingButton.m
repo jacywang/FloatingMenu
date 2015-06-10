@@ -16,6 +16,20 @@
     [self setup];
 }
 
+-(instancetype)initWithFrame:(CGRect)frame andImage:(UIImage *)image andBackgroundColor:(UIColor *)color {
+    self = [super init];
+    if (self) {
+        self.frame = frame;
+        self.layer.masksToBounds = YES;
+        self.layer.cornerRadius = self.frame.size.height / 2.0;
+        self.tintColor = [UIColor whiteColor];
+        self.backgroundColor = color;
+        [self setImage:[UIImage imageNamed:@"icon-close"] forState:UIControlStateNormal];
+        [self setContentMode:UIViewContentModeCenter];
+    }
+    return self;
+}
+
 -(void)setup {
     self.tintColor = [UIColor whiteColor];
     self.backgroundColor = [UIColor flatBlueColor];
