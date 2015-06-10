@@ -14,6 +14,8 @@
 		9C8BB73B1B28B4F4003B7AFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BB73A1B28B4F4003B7AFE /* Images.xcassets */; };
 		9C8BB73E1B28B4F4003B7AFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8BB73C1B28B4F4003B7AFE /* LaunchScreen.xib */; };
 		9C8BB74A1B28B4F4003B7AFE /* FloatingHeadsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BB7491B28B4F4003B7AFE /* FloatingHeadsTests.m */; };
+		9C8BB7551B28B874003B7AFE /* FloatingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BB7541B28B874003B7AFE /* FloatingButton.m */; };
+		9C8BB7591B28C57F003B7AFE /* UIColor+flatColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BB7581B28C57F003B7AFE /* UIColor+flatColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9C8BB7431B28B4F4003B7AFE /* FloatingHeadsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingHeadsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8BB7481B28B4F4003B7AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C8BB7491B28B4F4003B7AFE /* FloatingHeadsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingHeadsTests.m; sourceTree = "<group>"; };
+		9C8BB7531B28B874003B7AFE /* FloatingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingButton.h; sourceTree = "<group>"; };
+		9C8BB7541B28B874003B7AFE /* FloatingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingButton.m; sourceTree = "<group>"; };
+		9C8BB7571B28C57F003B7AFE /* UIColor+flatColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+flatColor.h"; sourceTree = "<group>"; };
+		9C8BB7581B28C57F003B7AFE /* UIColor+flatColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+flatColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				9C8BB7321B28B4F4003B7AFE /* AppDelegate.m */,
 				9C8BB7341B28B4F4003B7AFE /* ViewController.h */,
 				9C8BB7351B28B4F4003B7AFE /* ViewController.m */,
+				9C8BB7531B28B874003B7AFE /* FloatingButton.h */,
+				9C8BB7541B28B874003B7AFE /* FloatingButton.m */,
+				9C8BB7571B28C57F003B7AFE /* UIColor+flatColor.h */,
+				9C8BB7581B28C57F003B7AFE /* UIColor+flatColor.m */,
 				9C8BB7371B28B4F4003B7AFE /* Main.storyboard */,
 				9C8BB73A1B28B4F4003B7AFE /* Images.xcassets */,
 				9C8BB73C1B28B4F4003B7AFE /* LaunchScreen.xib */,
@@ -222,6 +232,8 @@
 				9C8BB7361B28B4F4003B7AFE /* ViewController.m in Sources */,
 				9C8BB7331B28B4F4003B7AFE /* AppDelegate.m in Sources */,
 				9C8BB7301B28B4F4003B7AFE /* main.m in Sources */,
+				9C8BB7591B28C57F003B7AFE /* UIColor+flatColor.m in Sources */,
+				9C8BB7551B28B874003B7AFE /* FloatingButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
