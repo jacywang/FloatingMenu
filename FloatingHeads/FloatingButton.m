@@ -21,6 +21,7 @@
     self.backgroundColor = [UIColor flatBlueColor];
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = self.frame.size.height / 2.0;
+    [self setBackgroundImage:[UIColor pixelImage] forState:UIControlStateHighlighted];
 }
 
 @end

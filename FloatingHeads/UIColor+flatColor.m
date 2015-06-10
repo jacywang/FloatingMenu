@@ -26,4 +26,14 @@
     return [UIColor colorWithRed:0.9115 green:0.2994 blue:0.2335 alpha:1.0];
 }
 
++(UIImage *)pixelImage {
+    UIGraphicsBeginImageContext(CGSizeMake(1.0, 1.0));
+    [[UIColor flatBlackColor] setFill];
+    UIRectFill(CGRectMake(0, 0, 1.0, 1.0));
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+
 @end

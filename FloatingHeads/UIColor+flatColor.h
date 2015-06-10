@@ -14,5 +14,6 @@
 +(UIColor *)flatBlackColor;
 +(UIColor *)flatBlueColor;
 +(UIColor *)flatRedColor;
++(UIImage *)pixelImage;
 
 @end
