@@ -9,10 +9,26 @@
 #import <UIKit/UIKit.h>
 #import "FloatingButton.h"
 
+@protocol FloatingMenuControllerProtocol
+
+-(void)cancelButtonPressed;
+-(void)newContactButtonPressed;
+
+@end
+
+typedef enum {
+    up,
+    left
+}Direction;
+
 @interface FloatingMenuController : UIViewController
 
-@property (strong, nonatomic) UIVisualEffectView *blurredView;
-@property (strong, nonatomic) FloatingButton *closeButton;
+@property (nonatomic) id<FloatingMenuControllerProtocol> delegate;
+@property (nonatomic) UIVisualEffectView *blurredView;
+@property (nonatomic) FloatingButton *closeButton;
+@property (nonatomic) Direction *defaultDirection;
+@property (nonatomic, assign) CGFloat buttonPadding;
+@property (nonatomic) NSMutableArray *buttonItems;
 
 -(instancetype)initWithView:(UIView *)view;
 

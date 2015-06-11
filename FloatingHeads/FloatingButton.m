@@ -24,8 +24,8 @@
         self.layer.cornerRadius = self.frame.size.height / 2.0;
         self.tintColor = [UIColor whiteColor];
         self.backgroundColor = color;
-        [self setImage:[UIImage imageNamed:@"icon-close"] forState:UIControlStateNormal];
-        [self setContentMode:UIViewContentModeCenter];
+        [self setImage:image forState:UIControlStateNormal];
+        [self setBackgroundImage:[UIColor pixelImage] forState:UIControlStateHighlighted];
     }
     return self;
 }

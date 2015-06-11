@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C60B55F1B28D925000D930E /* FloatingMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C60B55E1B28D925000D930E /* FloatingMenuController.m */; };
+		9C60B5611B29111D000D930E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C60B5601B29111D000D930E /* QuartzCore.framework */; };
 		9C8BB7301B28B4F4003B7AFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BB72F1B28B4F4003B7AFE /* main.m */; };
 		9C8BB7331B28B4F4003B7AFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BB7321B28B4F4003B7AFE /* AppDelegate.m */; };
 		9C8BB7361B28B4F4003B7AFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BB7351B28B4F4003B7AFE /* ViewController.m */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		9C60B55D1B28D925000D930E /* FloatingMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingMenuController.h; sourceTree = "<group>"; };
 		9C60B55E1B28D925000D930E /* FloatingMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingMenuController.m; sourceTree = "<group>"; };
+		9C60B5601B29111D000D930E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9C8BB72A1B28B4F4003B7AFE /* FloatingHeads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingHeads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8BB72E1B28B4F4003B7AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C8BB72F1B28B4F4003B7AFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C60B5611B29111D000D930E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 		9C8BB7211B28B4F4003B7AFE = {
 			isa = PBXGroup;
 			children = (
+				9C60B5601B29111D000D930E /* QuartzCore.framework */,
 				9C8BB72C1B28B4F4003B7AFE /* FloatingHeads */,
 				9C8BB7461B28B4F4003B7AFE /* FloatingHeadsTests */,
 				9C8BB72B1B28B4F4003B7AFE /* Products */,
